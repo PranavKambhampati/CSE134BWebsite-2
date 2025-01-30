@@ -8,9 +8,12 @@
 <body>
     <!--#include virtual="navbar.html" -->
     
-    <h1>Experimenting with HTML tags</h1>
+    <hgroup>
+        <h1>Experimenting with HTML tags</h1>
+        <p>Trying out different HTML tags to see how they work.</p>
+    </hgroup>
 
-    <article>
+    <section>
         <h2>Using the "pre" tag </h2>
         <p>
             The <dfn>pre</dfn> tag is used to define preformatted text. 
@@ -33,7 +36,24 @@
                                      \    ) |`------##---~~~~-~  ) )
                                       ~-_/_/                  ~~ ~~
         </pre>
-    </article>
+    </section>
+    <hr>
+    <section>
+        <h2>Using the "video" tag</h2>
+        <p>The <dfn>video tag</dfn> can be used to embed videos</p>
+
+        <video controls width="250" height="200" muted>
+            <source src="/assets/flower.webm" type="video/webm" />
+        </video>
+    </section>
+
+    <hr>
+    <section>
+        <h2>Using the "table" and related tags</h2>
+        <p>The <dfn>table</dfn> tag is used to create tables in HTML</p>
+
+        
+    </section>
     <footer>
         <p>&copy Pranav Kambhampati</p>
     </footer>
