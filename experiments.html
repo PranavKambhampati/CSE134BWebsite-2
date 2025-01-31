@@ -14,6 +14,16 @@
             <h1>Experimenting with HTML tags</h1>
             <p>Trying out different HTML tags to see how they work.</p>
         </hgroup>
+
+        <section>
+            <dialog open>
+                <p>Welcome to the experimental part of my website! <br> You'll find tags that I'm experimenting with here.</p>
+                <form method="dialog">
+                  <button>I'm excited to look around!</button>
+                </form>
+              </dialog>
+              
+        </section>
     
         <section>
             <header>
@@ -52,7 +62,16 @@
                 <source src="/assets/flower.webm" type="video/webm" />
             </video>
         </section>
-    
+        <hr>
+        <section>
+            <header>
+                <h2>Using the "audio" tag</h2>
+            </header>
+            <p>
+                This what a T-Rex sounded like. Its a lot different than it does in Jurassic Park!
+            </p>
+            <audio controls src="/assets/t-rex-roar.mp3"></audio>
+        </section>
         <hr>
         <section>
             <header>
@@ -180,7 +199,7 @@
             </p>
 
         </section>
-
+        <hr>
         <section>
             <header>
                 <h2>Using the "del" and "ins" tags </h2>
@@ -193,6 +212,65 @@
                 </p>
             </details>
         </section>
+        <hr>
+        <section>
+            <header>
+                <h2>Using the "search" tag</h2>
+                <search>
+                    <form action="">
+                      <label for="car">Find a Car</label>
+                      <input type="search" id="car" name="c" />
+                      <button type="submit">Search</button>
+                    </form>
+                  </search>
+            </header>
+        </section>
+        <hr>
+        <section>
+            <header>
+                <h2>Using the "datalist" and "select" tags (with "optgroup")</h2>
+            </header>
+            <p>
+                The <dfn>datalist</dfn> tag is used to provide an autocomplete feature for input fields.
+                Users can choose from a list of options or type their own option in.
+            </p>
+            <label for="car-choice">Choose a Car:</label>
+            <input list="car-flavors" id="car-choice" name="car-choice" />
+            <datalist id="car-flavors">
+                <option value="Porsche 911"></option>
+                <option value="Ford Mustang"></option>
+                <option value="Toyota Corolla"></option>
+                <option value="Subaru WRX"></option>
+                <option value="Toyota 4Runner"></option>
+            </datalist>
+
+            <p>
+                The <dfn>select</dfn> tag is used to create a dropdown list.
+                Users are limited to these options.
+            </p>
+            <label for="car-select">Choose a car:</label>
+
+            <select name="cars" id="car-select">
+                <option value="">--Please choose an option--</option>
+                <optgroup label="Sporty Cars">
+                    <option value="Porsche 911">Porsche 911</option>
+                    <option value="Ford Mustang">Ford Mustang</option>
+                    <option value="Subaru WRX">Subaru WRX</option>
+                    <option value="Chevrolet Corvette">Chevrolet Corvette</option>
+                </optgroup>
+                <optgroup label="Daily Drivers">
+                    <option value="Toyota Corolla">Toyota Corolla</option>
+                    <option value="Toyota 4Runner">Toyota 4Runner</option>
+                    <option value="Honda Civic">Honda Civic</option>
+                </optgroup>
+                
+                
+            </select>
+
+
+        </section>
+        <hr>
+        
     </main>
     <footer>
         <p>&copy Pranav Kambhampati</p>
