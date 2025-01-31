@@ -7,53 +7,156 @@
 </head>
 <body>
     <!--#include virtual="navbar.html" -->
+    <button><a href="index.html">Back to Index (temporary button)</a></button>
+
+    <main>
+        <hgroup>
+            <h1>Experimenting with HTML tags</h1>
+            <p>Trying out different HTML tags to see how they work.</p>
+        </hgroup>
     
-    <hgroup>
-        <h1>Experimenting with HTML tags</h1>
-        <p>Trying out different HTML tags to see how they work.</p>
-    </hgroup>
+        <section>
+            <header>
+                <h2>Using the "pre" tag </h2>
+            </header>
+            <p>
+                The <dfn>pre</dfn> tag is used to define preformatted text. 
+            </p>
+            <p>
+                A Porsche 911 is one of the best cars ever made.
+            </p>
+            <pre>
+                ____----------- _____
+                \~~~~~~~~~~/~_--~~~------~~~~~     \
+                 `---`\  _-~      |                   \
+                   _-~  <_         |                     \[]
+                 / ___     ~~--[""] |      ________-------'_
+                > /~` \    |-.   `\~~.~~~~~                _ ~ - _
+                 ~|  ||\%  |       |    ~  ._                ~ _   ~ ._
+                   `_//|_%  \      |          ~  .              ~-_   /\
+                          `--__     |    _-____  /\               ~-_ \/.
+                               ~--_ /  ,/ -~-_ \ \/          _______---~/
+                                   ~~-/._<   \ \`~~~~~~~~~~~~~     ##--~/
+                                         \    ) |`------##---~~~~-~  ) )
+                                          ~-_/_/                  ~~ ~~
+            </pre>
+        </section>
+        <hr>
+        <section>
+            <header>
+                <h2>Using the "video" tag</h2>
+            </header>
+            <p>The <dfn>video tag</dfn> can be used to embed videos</p>
+    
+            <video controls width="250" height="200" muted>
+                <source src="/assets/flower.webm" type="video/webm" />
+            </video>
+        </section>
+    
+        <hr>
+        <section>
+            <header>
+                <h2>Using the "table" and related tags</h2>
+            </header>
+            <p>The <dfn>table</dfn> tag is used to create tables in HTML</p>
+            <p>Here is a table about some popular cars.</p>
 
-    <section>
-        <h2>Using the "pre" tag </h2>
-        <p>
-            The <dfn>pre</dfn> tag is used to define preformatted text. 
-        </p>
-        <p>
-            A Porsche 911 is one of the best cars ever made.
-        </p>
-        <pre>
-            ____----------- _____
-            \~~~~~~~~~~/~_--~~~------~~~~~     \
-             `---`\  _-~      |                   \
-               _-~  <_         |                     \[]
-             / ___     ~~--[""] |      ________-------'_
-            > /~` \    |-.   `\~~.~~~~~                _ ~ - _
-             ~|  ||\%  |       |    ~  ._                ~ _   ~ ._
-               `_//|_%  \      |          ~  .              ~-_   /\
-                      `--__     |    _-____  /\               ~-_ \/.
-                           ~--_ /  ,/ -~-_ \ \/          _______---~/
-                               ~~-/._<   \ \`~~~~~~~~~~~~~     ##--~/
-                                     \    ) |`------##---~~~~-~  ) )
-                                      ~-_/_/                  ~~ ~~
-        </pre>
-    </section>
-    <hr>
-    <section>
-        <h2>Using the "video" tag</h2>
-        <p>The <dfn>video tag</dfn> can be used to embed videos</p>
-
-        <video controls width="250" height="200" muted>
-            <source src="/assets/flower.webm" type="video/webm" />
-        </video>
-    </section>
-
-    <hr>
-    <section>
-        <h2>Using the "table" and related tags</h2>
-        <p>The <dfn>table</dfn> tag is used to create tables in HTML</p>
-
-        
-    </section>
+            <p>
+                These are some of the best cars ever made because of how reliable they are.
+                
+            </p>
+            <aside>
+                The Toyota Corolla is popular because of its engine reliability. It uses a <i>2.0 Liter 4-cylinder natuarally aspirated engine</i>. 
+            </aside>
+            <p>
+                Additionally, a lot of people use these cars, adding to their popularity.
+            </p>
+            <aside>
+                <p>Upwards of 232,000 Toyota Corollas were sold in the United States in 2024.</p>
+            </aside>
+            <p>
+                Some information about these popular cars is provided in the table below.
+            </p>
+    
+            <table>
+                <caption>Info about some cool cars</caption>
+                <colgroup>
+                    <col span="2" class="car"> <!-- This applies the car class to the first two columns (Brand and Model) -->
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Pros</th>
+                        <th>Cons</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Porsche</td>
+                        <td>911</td>
+                        <td>Fast, good handling</td>
+                        <td>Expensive</td>
+                    </tr>
+                    <tr>
+                        <td>Toyota</td>
+                        <td>Corolla</td>
+                        <td>Reliable, good gas mileage</td>
+                        <td>Not very fast</td>
+                    </tr>
+                    <tr>
+                        <td>BMW</td>
+                        <td>M3</td>
+                        <td>Fast, good handling</td>
+                        <td>Expensive to maintain</td>
+                    </tr>
+                    <tr>
+                        <td>Subaru</td>
+                        <td>WRX</td>
+                        <td>Fast, good handling</td>
+                        <td>Not very fuel efficient</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes</td>
+                        <td>AMG GT</td>
+                        <td>Fast, good handling</td>
+                        <td>Expensive</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <header>
+                <h2>Using the "ol" and "code" tags</h2>
+            </header>
+            <p>
+                Being able to use ArrayLists in Java while coding is a very important skill. <br>
+                These are some of the most useful methods:
+            </p>
+            <ol>
+                <li>
+                    <code>add()</code> - Adds an element to the ArrayList
+                </li>
+                <li>
+                    <code>remove()</code> - Removes an element from the ArrayList
+                </li>
+                <li>
+                    <code>get()</code> - Gets an element from the ArrayList
+                </li>
+            </ol>
+            <div>
+                <blockquote cite="https://www.geeksforgeeks.org/why-array-data-structures-is-needed/">
+                    <p>
+                        Arrays provide direct and efficient access to any element in the collection. 
+                        Accessing an element in an array is an O(1) operation, 
+                        meaning that the time required to access an element is constant and does not depend on the size of the array.
+                    </p>
+                </blockquote>
+                <p>-GeeksForGeeks, <cite>Why Array Data Structures is needed?</cite></p>
+            </div>
+        </section>
+    </main>
     <footer>
         <p>&copy Pranav Kambhampati</p>
     </footer>
