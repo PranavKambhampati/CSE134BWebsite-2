@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Experiments</title>
+
+
 </head>
 <body>
     <!--#include virtual="navbar.html" -->
@@ -270,7 +272,20 @@
 
         </section>
         <hr>
-        
+        <section>
+            <header>
+                <h2>Using the "canvas" tag with  minor amounts of JS</h2>
+            </header>
+            <canvas width="120" height="120">
+                A simple canvas element
+            </canvas>
+            <script>
+                const canvas = document.querySelector("canvas");
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle = "red";
+                ctx.fillRect(50, 50, 100, 100);
+              </script>
+        </section>
     </main>
     <footer>
         <p>&copy Pranav Kambhampati</p>
