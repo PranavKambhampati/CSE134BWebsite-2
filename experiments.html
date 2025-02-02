@@ -55,7 +55,7 @@
             <p>Trying out different HTML tags to see how they work.</p>
         </hgroup>
 
-        <section>
+        <div>
             <hello-world></hello-world>
             <script>
                 class HelloWorld extends HTMLElement{
@@ -65,17 +65,16 @@
                 }
                 customElements.define("hello-world", HelloWorld);
             </script>
-        </section>
+        </div>
         <hr>
-        <section>
+        <div>
             <dialog open>
                 <p>Welcome to the experimental part of my website! <br> You'll find tags that I'm experimenting with here.</p>
                 <form method="dialog">
                   <button>I'm excited to look around!</button>
                 </form>
-              </dialog>
-              
-        </section>
+              </dialog>  
+            </div>
     
         <section>
             <header>
@@ -111,7 +110,7 @@
             <p>The <dfn>video tag</dfn> can be used to embed videos</p>
     
             <video controls width="250" height="200" muted>
-                <source src="/assets/flower.webm" type="video/webm" />
+                <source src="/assets/flower.webm" type="video/webm">
             </video>
         </section>
         <hr>
@@ -268,14 +267,14 @@
         <section>
             <header>
                 <h2>Using the "search" tag</h2>
-                <search>
-                    <form action="">
-                      <label for="car">Find a Car</label>
-                      <input type="search" id="car" name="c" />
-                      <button type="submit">Search</button>
-                    </form>
-                  </search>
             </header>
+            <search>
+                <form action="">
+                  <label for="car">Find a Car</label>
+                  <input type="search" id="car" name="c" />
+                  <button type="submit">Search</button>
+                </form>
+              </search>
         </section>
         <hr>
         <section>
