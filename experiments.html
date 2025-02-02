@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experiments</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiments</title>
+    <style>
+        callout-box {
+            display: block;
+            border: 2px solid #007bff;
+            border-left-width: 10px;
+            padding: 10px;
+            background-color: #e7f3ff;
+            margin: 20px 0;
+        }
 
+        callout-box h3 {
+            margin-top: 0;
+            font-size: 18px;
+            color: #007bff;
+        }
+
+        callout-box p {
+            margin: 0;
+            color: #333;
+        }
+    </style>
 
 </head>
 <body>
@@ -307,6 +327,18 @@
                   </svg>
             </header>
         </section>
+        <hr>
+        <section>
+            <header>
+                <h2>Using a custom semantic tag</h2>
+            </header>
+            <p>This is a custom callout-box that highlights important quotes</p>
+            <callout-box>
+                <h3>Important Note</h3>
+                <p>"With great power comes great responsibility" -Spiderman's Uncle</p>
+            </callout-box>
+        </section>
+
     </main>
     <footer>
         <p>&copy; Pranav Kambhampati</p>
