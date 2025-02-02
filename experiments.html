@@ -18,6 +18,18 @@
         </hgroup>
 
         <section>
+            <hello-world></hello-world>
+            <script>
+                class HelloWorld extends HTMLElement{
+                    connectedCallback() {
+                        console.log("Hello World!");
+                    }
+                }
+                customElements.define("hello-world", HelloWorld);
+            </script>
+        </section>
+        <hr>
+        <section>
             <dialog open>
                 <p>Welcome to the experimental part of my website! <br> You'll find tags that I'm experimenting with here.</p>
                 <form method="dialog">
