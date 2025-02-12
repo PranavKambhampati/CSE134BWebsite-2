@@ -1,0 +1,132 @@
+/* Styling #hi */
+
+#hi {
+    display: flex;
+    justify-content: space-around;
+    font-family: "Poppins", sans-serif;
+
+}
+
+#hi img {
+    flex-shrink: 0;
+    border-radius: 3em;
+    align-self: flex-start;
+    width: 20%;
+}
+
+#hi div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#education {
+    display: flex;
+    margin: 2em;
+    font-family: "Poppins", sans-serif;
+}
+
+
+#education-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#courses-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.course-box {
+    border: 0.2em solid #ccc;
+    padding: 1em;
+}
+
+#education img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    margin-left: 7em;
+    margin-top: 5em;
+    place-content: center;
+}
+
+/** FAQ Section Styling **/
+
+#FAQ {
+    max-width: 40em;
+    margin: 2em auto;
+    font-family: "Poppins", sans-serif;
+}
+
+#FAQ h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+#FAQ ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+details {
+    border: 0.1em solid #ccc;
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+details[open] {
+    background-color: #e6f7ff; /* Light blue when expanded */
+}
+
+summary {
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+summary::marker {
+    color: #007bff; /* Custom marker color */
+}
+
+details p {
+    margin-top: 0.5em;
+    font-size: 1.1em;
+}
+
+/* Footer styling */
+
+footer {
+    background-color: #222;  /* Dark background */
+    color: #fff;  /* White text */
+    text-align: center;
+    padding: 1.5em 0;
+    font-size: 1.1em;
+    margin-top: 2em;
+    font-family: "Poppins", sans-serif;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+footer a {
+    color: #00bcd4; /* Light blue color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ffcc00; /* Yellow on hover */
+    text-decoration: underline;
+}
+
