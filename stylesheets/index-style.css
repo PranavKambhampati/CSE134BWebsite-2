@@ -1,10 +1,43 @@
+:root {
+    --primary-background-color: #3d3b49;
+    --general-text-color: #dbdad5;
+    --text-font-family: "Poppins", sans-serif;
+    --general-text-font-size: 1.3em;
+    --non-general-text-font-size: 1em;
+    --main-heading-font-size: 2.5em;
+    --secondary-heading-font-size: 2.2em;
+    --third-heading-font-size: 1.6em;
+    --summary-text-color: #3d3b49;
+    --details-text-color: #3d3b49;
+    --details-background-color: #efedfc;
+}
+
+body {
+    background-color: var(--primary-background-color, White);
+    color: var(--general-text-color, black);
+    font-family: var(--text-font-family, Arial);
+}
+
+hr {
+    display: none;
+}
+
+h2, #hello-statement {
+    font-size: var(--secondary-heading-font-size, 2.2em);
+}
+
+h3 {
+    font-size: var(--third-heading-font-size, 1.6em);
+}
+
 /* Styling #hi */
 
 #hi {
     display: flex;
     justify-content: space-around;
-    font-family: "Poppins", sans-serif;
-
+    font-size: var(--general-text-font-size, 1.3em);
+    margin: 2em;
+    margin-bottom: 2.5em;
 }
 
 #hi img {
@@ -21,10 +54,11 @@
     align-items: center;
 }
 
+/* Styling #education */
+
 #education {
     display: flex;
     margin: 2em;
-    font-family: "Poppins", sans-serif;
 }
 
 
@@ -55,17 +89,15 @@
     place-content: center;
 }
 
-/** FAQ Section Styling **/
+/** Styling #FAQ **/
 
 #FAQ {
-    max-width: 40em;
+    max-width: 45em;
     margin: 2em auto;
-    font-family: "Poppins", sans-serif;
 }
 
 #FAQ h2 {
     text-align: center;
-    font-size: 2em;
     margin-bottom: 1em;
 }
 
@@ -82,16 +114,18 @@ details {
     background-color: #f9f9f9;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    color: var(--details-text-color, black);
 }
 
 details[open] {
-    background-color: #e6f7ff; /* Light blue when expanded */
+    background-color: var(--details-background-color, White); /* Light blue when expanded */
 }
 
 summary {
-    font-size: 1.2em;
+    font-size: var(--general-text-font-size, 1.3em);
     font-weight: bold;
     cursor: pointer;
+    color: var(--summary-text-color, black);
 }
 
 summary::marker {
@@ -100,34 +134,7 @@ summary::marker {
 
 details p {
     margin-top: 0.5em;
-    font-size: 1.1em;
-}
-
-/* Footer styling */
-
-footer {
-    background-color: #222;  /* Dark background */
-    color: #fff;  /* White text */
-    text-align: center;
-    padding: 1.5em 0;
-    font-size: 1.1em;
-    margin-top: 2em;
-    font-family: "Poppins", sans-serif;
-}
-
-footer p {
-    margin: 0.5em 0;
-}
-
-footer a {
-    color: #00bcd4; /* Light blue color */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    color: #ffcc00; /* Yellow on hover */
-    text-decoration: underline;
+    font-size: var(--non-general-text-font-size, 1em);
 }
 
 /* Styling Images */

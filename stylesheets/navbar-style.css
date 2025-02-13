@@ -1,7 +1,7 @@
 nav {
     background-color: #333;
     color: white;
-    padding: 10px;
+    padding: 1em;
     font-family: "Poppins", sans-serif;
 }
 
@@ -12,7 +12,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 1em;
     position: relative;
 }
 
@@ -33,8 +33,8 @@ nav ul li a:hover {
     top: 100%;
     left: 0;
     background-color: #444;
-    min-width: 200px;
-    display: none; /* Hide dropdown initially */
+    min-width: 5em;
+    display: none;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -45,9 +45,10 @@ nav ul li a:hover {
 }
 
 .nav-dropdown li a {
-    padding: 10px;
+    padding: 0.5em;
     color: white;
     display: block;
+    font-size: 1em;
 }
 
 .nav-dropdown li a:hover {
@@ -63,3 +64,22 @@ nav ul li:hover .nav-dropdown {
     font-family: "Poppins", sans-serif;
     justify-content: flex-start;
 }
+
+/* <header>
+        <nav>
+            <ul>
+                <!-- <li id="faviconplace">Pranav Kambhampati</li> -->
+                <li>
+                    <a href="index.html">About Me</a>
+                    <ul class="nav-dropdown">
+                        <li><a href="#hi">Hi</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#FAQ">FAQ</a></li>
+                    </ul>
+                </li>
+                <li><a href="technical.html">Skills + Experiences + Projects</a></li>
+                <li><a href="resumecontact.html">Contact Me + Resume</a></li>
+                <li><a href="experiments.html">Experimentation</a></li>
+            </ul>
+        </nav>
+    </header> */
