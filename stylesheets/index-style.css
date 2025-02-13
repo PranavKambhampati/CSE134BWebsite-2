@@ -16,6 +16,7 @@ body {
     background-color: var(--primary-background-color, White);
     color: var(--general-text-color, black);
     font-family: var(--text-font-family, Arial);
+    padding-top: 5em;
 }
 
 hr {

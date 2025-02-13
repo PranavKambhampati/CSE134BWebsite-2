@@ -1,0 +1,20 @@
+:root {
+    --primary-background-color: #3d3b49;
+    --general-text-color: #dbdad5;
+    --text-font-family: "Poppins", sans-serif;
+    --general-text-font-size: 1.3em;
+    --non-general-text-font-size: 1em;
+    --main-heading-font-size: 2.5em;
+    --secondary-heading-font-size: 2.2em;
+    --third-heading-font-size: 1.6em;
+    --summary-text-color: #3d3b49;
+    --details-text-color: #3d3b49;
+    --details-background-color: #efedfc;
+}
+
+body {
+    background-color: var(--primary-background-color, White);
+    color: var(--general-text-color, black);
+    font-family: var(--text-font-family, Arial);
+    padding-top: 5em;
+}
