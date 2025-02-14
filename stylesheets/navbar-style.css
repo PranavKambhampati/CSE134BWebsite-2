@@ -1,4 +1,4 @@
-nav {
+nav:has(ul) {
     position: fixed;
     top: 0;
     left: 0;
@@ -35,7 +35,7 @@ nav ul li a:hover {
     border-radius: 0.25em;
 }
 
-.nav-dropdown {
+.nav-dropdown:has(li) {
     position: absolute;
     top: 100%;
     left: 0;
