@@ -148,6 +148,10 @@ button:hover {
     background-color: #005bb5;
 }
 
+@media (max-width: 1000px) {
+    
+}
+
 @media (max-width: 500px) { /* Using dynamic viewport width */
     #resumecontact-wrapper {
         flex-direction: column;
