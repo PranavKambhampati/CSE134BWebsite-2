@@ -64,12 +64,18 @@ h3 {
 #education {
     display: flex;
     margin: 2em;
+    justify-content: space-between;
 }
 
+#education-left {
+    margin-right: 0;
+}
 
 #education-container {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 #courses-container {
@@ -92,7 +98,7 @@ h3 {
     margin-left: 7em;
     margin-top: 5em;
     place-content: center;
-    border: 5px solid color-mix(in srgb, rgb(157, 132, 226) 90%, black 10%);
+    /* border: 5px solid color-mix(in srgb, rgb(157, 132, 226) 90%, black 10%); */
 }
 
 /** Styling #FAQ **/
