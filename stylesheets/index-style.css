@@ -150,9 +150,32 @@ img {
     }
 }
 
+@media (max-width: 1000px) {
+    #hi {
+        flex-wrap: wrap;
+    }
+
+    #education img {
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+    #education-container {
+        flex-direction: column;
+    }
+
+    #education {
+        flex-direction: column;
+    }
+
+    #courses-container {
+        flex-direction: column;
+    }
+}
+
 @media (max-width: 500px) {
     #hi {
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
     }
 
