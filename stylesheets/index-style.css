@@ -27,6 +27,10 @@ h2, #hello-statement {
     font-size: var(--secondary-heading-font-size, 2.2em);
 }
 
+#hello-statement {
+    color: color-mix(in srgb, rgb(157, 132, 226) 90%, black 10%);
+}
+
 h3 {
     font-size: var(--third-heading-font-size, 1.6em);
 }
