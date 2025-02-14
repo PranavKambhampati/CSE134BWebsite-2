@@ -148,10 +148,11 @@ button:hover {
     background-color: #005bb5;
 }
 
-@media (max-width: 800px) { /* Using dynamic viewport width */
+@media (max-width: 500px) { /* Using dynamic viewport width */
     #resumecontact-wrapper {
         flex-direction: column;
         align-items: center;
+        padding: 2em;
     }
 
     #resume iframe {
@@ -161,5 +162,9 @@ button:hover {
 
     #contact {
         width: 85dvw; /* Adjust form width accordingly */
+    }
+
+    h1 {
+        font-size: 2em;
     }
 }

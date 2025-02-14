@@ -149,3 +149,34 @@ img {
         opacity: 1;
     }
 }
+
+@media (max-width: 500px) {
+    #hi {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #hi img {
+        width: 50%;
+        left: 50%;
+        right: 50%;
+    }
+
+    #education img {
+        margin-left: 0;
+        margin-top: 2em;
+    }
+
+    #education-container {
+        flex-direction: column;
+    }
+
+    #education {
+        flex-direction: column;
+    }
+
+
+    #courses-container {
+        flex-direction: column;
+    }
+}
