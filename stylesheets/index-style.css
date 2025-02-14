@@ -134,7 +134,7 @@ summary {
 }
 
 summary::marker {
-    color: #007bff; /* Custom marker color */
+    color: color-mix(in srgb, rgb(157, 132, 226) 90%, black 10%); /* Custom marker color */
 }
 
 details p {
@@ -162,6 +162,7 @@ img {
     #education img {
         margin-left: 0;
         margin-top: 2em;
+        border: 10px solid color-mix(in srgb, rgb(157, 132, 226) 90%, black 10%);
     }
 
     #education-container {
