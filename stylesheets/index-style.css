@@ -92,6 +92,7 @@ h3 {
     margin-left: 7em;
     margin-top: 5em;
     place-content: center;
+    border: 5px solid color-mix(in srgb, rgb(157, 132, 226) 90%, black 10%);
 }
 
 /** Styling #FAQ **/
@@ -162,7 +163,7 @@ img {
     #education img {
         margin-left: 0;
         margin-top: 2em;
-        border: 10px solid color-mix(in srgb, rgb(157, 132, 226) 90%, black 10%);
+        border: 5px solid color-mix(in srgb, rgb(157, 132, 226) 90%, black 10%);
     }
 
     #education-container {
