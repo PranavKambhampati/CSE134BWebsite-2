@@ -19,9 +19,9 @@ body {
     font-family: var(--text-font-family, Arial);
     padding-top: 5em;
     font-size: 1em;
-    width: 100%;
+    /* width: 100%;
     max-width: 100%;
-    overflow: none;
+    overflow: none; */
 }
 
 h1 {
